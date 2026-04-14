@@ -93,7 +93,7 @@
                 <div class="flex gap-3">
                     <select x-model="maxResults" class="px-3 py-2.5 border rounded-lg text-sm bg-white">
                         <option value="">No limit</option>
-                        <option value="100">Max 100</option>
+                        <option value="100" selected>Max 100</option>
                         <option value="250">Max 250</option>
                         <option value="500">Max 500</option>
                         <option value="750">Max 750</option>
@@ -291,7 +291,7 @@ function app() {
 
         // Search
         keyword: '',
-        maxResults: '',
+        maxResults: '100',
         searching: false,
         searches: [],
         pollTimer: null,
